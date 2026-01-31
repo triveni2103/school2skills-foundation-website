@@ -1,5 +1,5 @@
 import styles from "./Home.module.css";
-
+import heroImage from "../../assets/hero.jfif";
 export default function Home() {
   return (
     <>

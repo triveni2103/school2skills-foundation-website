@@ -34,12 +34,21 @@ p {
 
 /* Hero */
 .hero {
-  background: linear-gradient(
-    135deg,
-    var(--brand-cream),
-    var(--brand-rose-light)
-  );
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ), url("../../assets/hero.jfif");
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
+}
+.hero h1,
+.hero h2,
+.hero h3,
+.hero p {
+  color: #ffffff;
 }
 
 .heroContent {
