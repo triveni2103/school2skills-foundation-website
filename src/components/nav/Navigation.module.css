@@ -1,0 +1,69 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose: #FC8EAE;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --brand-cream-dark: #f7cca9;
+  --text-normal: #ece8e8;
+  --text-dark: #170101;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #fff; /* clean NGO look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px 20px;
+}
+
+/* BRAND */
+.brand {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.brand > img {
+  height: 70px; /* reduced for better navbar balance */
+}
+
+/* LINKS */
+.link {
+  margin-left: 1rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--brand-amber);
+}
+
+/* ACTIVE LINK */
+.active {
+  color: var(--brand-clay) !important;
+  font-weight: 600;
+}
+
+/* UNDERLINE INDICATOR */
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--brand-amber);
+  border-radius: 2px;
+}
+
+/* MOBILE TOGGLER */
+.navbar-toggler {
+  border-color: var(--brand-olive);
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0.4);
+}

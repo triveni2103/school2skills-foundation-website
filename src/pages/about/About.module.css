@@ -1,0 +1,120 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose: #FC8EAE;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --brand-cream-dark: #f7cca9;
+  --text-normal: #ece8e8;
+  --text-dark: #170101;
+}
+
+/* Sections */
+.hero,
+.intro,
+.programs {
+  padding: 80px 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: var(--text-dark);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--brand-cream),
+    var(--brand-rose-light)
+  );
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Vision & Mission */
+.intro {
+  background-color: #fff;
+}
+
+.contentBox {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+/* Values */
+.programs {
+  background-color: var(--brand-cream);
+}
+
+.programs h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.programGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--brand-clay);
+  margin-bottom: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .intro h2,
+  .programs h2 {
+    font-size: 24px;
+  }
+}

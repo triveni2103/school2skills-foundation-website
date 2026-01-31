@@ -1,0 +1,109 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose: #FC8EAE;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --brand-cream-dark: #f7cca9;
+  --text-normal: #ece8e8;
+  --text-dark: #170101;
+}
+
+/* Sections */
+.hero,
+.programs,
+.closing {
+  padding: 80px 20px;
+}
+
+/* Typography */
+h1,
+h2 {
+  color: var(--text-dark);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--brand-cream),
+    var(--brand-rose-light)
+  );
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Programs Grid */
+.programs {
+  background-color: #fff;
+}
+
+.programGrid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--brand-cream);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.card h2 {
+  color: var(--brand-clay);
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+/* Closing */
+.closing {
+  background-color: var(--brand-olive);
+  text-align: center;
+}
+
+.closing h2,
+.closing p {
+  color: #fff;
+}
+
+.closing p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 17px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+}

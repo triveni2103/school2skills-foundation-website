@@ -1,0 +1,141 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose: #FC8EAE;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --brand-cream-dark: #f7cca9;
+  --text-normal: #ece8e8;
+  --text-dark: #170101;
+}
+
+/* Sections */
+.hero {
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--brand-cream),
+    var(--brand-rose-light)
+  );
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.contactGrid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Info Box */
+.infoBox h2,
+.formBox h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.infoBox p {
+  margin-bottom: 20px;
+}
+
+.infoItem {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.infoItem strong {
+  display: block;
+  color: var(--brand-clay);
+}
+
+.socialLinks {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.socialLinks a {
+  text-decoration: none;
+  color: var(--brand-amber);
+  font-weight: 500;
+}
+
+/* Form */
+.formBox {
+  background: var(--brand-cream);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form input,
+.form textarea {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--brand-amber);
+}
+
+.form button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: var(--brand-amber);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: var(--brand-clay);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,56 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --text-dark: #170101;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--brand-olive);
+  padding: 32px 20px;
+  margin-top: 60px;
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+}
+
+/* LINKS */
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.footerLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,109 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose: #FC8EAE;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --brand-cream-dark: #f7cca9;
+  --text-normal: #ece8e8;
+  --text-dark: #170101;
+}
+
+/* Sections */
+.hero {
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    var(--brand-cream),
+    var(--brand-rose-light)
+  );
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+/* Programs */
+.programs {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.programs h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.programGrid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--brand-cream);
+  padding: 28px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--brand-clay);
+  margin-bottom: 12px;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 80px 20px;
+  background-color: var(--brand-olive);
+  text-align: center;
+}
+
+.ctaSection h2,
+.ctaSection p {
+  color: #fff;
+}
+
+.ctaSection p {
+  margin-bottom: 24px;
+  font-size: 17px;
+}
+
+.primaryBtn {
+  display: inline-block;
+  background-color: var(--brand-amber);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .programs h2 {
+    font-size: 26px;
+  }
+}

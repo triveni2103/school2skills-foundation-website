@@ -1,0 +1,153 @@
+:root {
+  --brand-olive: #978A3C;
+  --brand-clay: #A53C20;
+  --brand-amber: #E8781E;
+  --brand-sun: #E9DD5D;
+  --brand-rose: #FC8EAE;
+  --brand-rose-light: #FFDAD0;
+  --brand-cream: #FFE3CC;
+  --brand-cream-dark: #f7cca9;
+  --text-normal: #ece8e8;
+  --text-dark: #170101;
+}
+
+/* Sections */
+.hero,
+.intro,
+.programs {
+  padding: 80px 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: var(--text-dark);
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+    135deg,
+    var(--brand-cream),
+    var(--brand-rose-light)
+  );
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 36px;
+}
+
+/* CTA Buttons */
+.ctaGroup {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  background-color: var(--brand-amber);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.secondaryBtn {
+  background-color: var(--brand-olive);
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.outlineBtn {
+  border: 2px solid var(--brand-clay);
+  color: var(--brand-clay);
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Intro */
+.intro {
+  background-color: #fff;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  max-width: 720px;
+  margin: auto;
+}
+
+/* Programs */
+.programs {
+  background-color: var(--brand-cream);
+}
+
+.programs h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.programGrid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.card h3 {
+  color: var(--brand-clay);
+  margin-bottom: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .intro h2,
+  .programs h2 {
+    font-size: 26px;
+  }
+}
